@@ -34,7 +34,7 @@ String[] str = new String[5];
         JLabel inf3 = new JLabel();
         JLabel info4 = new JLabel();
 
-           String cn= Integer.toString(count());
+           String cn= "";
            JLabel type = new JLabel("                  Date                                   Type              Amount");
            type.setBounds(50,140,400,30);
            add(type);
@@ -96,26 +96,10 @@ btn = new JButton("BACK");
         setVisible(true);
 
     }
-    public int count (){
-        int count1 = 0;
-        try{
-            conn cn  = new conn();
 
-                    String query = "select * from bank where card = '"+Card+"' order by date desc limit 5";
-                    ResultSet rs = cn.s.executeQuery(query);
-                    while (rs.next()){
-                        count1++;
-                    }
-
-        }
-        catch (Exception e){
-            JOptionPane.showMessageDialog(null,e.getMessage());
-        }
-        return count1;
-    }
 
     public static void main(String[] args) {
-        new MiniStatement("");
+        new MiniStatement("5067302602996798");
     }
 
     @Override
