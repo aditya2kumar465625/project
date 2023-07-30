@@ -1,0 +1,1 @@
+MySQL -u aditya465625 -pAk@2018@2006 -h db4free.net. -P3306

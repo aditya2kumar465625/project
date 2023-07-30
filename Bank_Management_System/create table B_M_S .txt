@@ -1,0 +1,19 @@
+create table bank (card text,date text , type varchar(30),amount text,Balance text);
+
+
+
+create table acc_details (Form_No varchar(30) , Account_Type text ,Card_Numbers text,PIN varchar(5),Services text);
+
+
+
+create table signup (Form varchar(5),Name varchar(30),Father_Name varchar(30),DOB varchar(30),Gender varchar(10), Marital_status varchar(20) , Email text,Address text,City text,State text,Pin_code varchar(6));
+
+
+
+
+create table signup_two( Form_No text,religion varchar(30),category varchar(30),Income text,Education text,occupation text,Pan_No varchar(10),Aadhar varchar(12),senior varchar(5),Existing_acc varchar(5));
+
+
+create table login (form varchar(5) , car_no text,pin text);
+
+
