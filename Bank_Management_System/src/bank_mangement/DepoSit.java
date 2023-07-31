@@ -97,7 +97,7 @@ if (actionEvent.getSource().equals(Back)){
         catch (Exception e){
             System.out.println(e);
         }
-                String query = "insert into bank value('"+Card+"','"+date+"','"+"Deposit"+"','"+deposit.getText()+"','"+balance+"')";
+                String query = "insert into bank(card,date,type,amount,Balance)  value('"+Card+"','"+date+"','"+"Deposit"+"','"+deposit.getText()+"','"+balance+"')";
     try {
         cn.s.executeUpdate(query);
         JOptionPane.showMessageDialog(null,"Successfully amount deposited "+deposit.getText());

@@ -123,7 +123,11 @@ setVisible(false);
             new BalanceEnquiry(Card);
 
         } else if (actionEvent.getSource().equals(mini_statement)) {
+
+
             new MiniStatement(Card);
+
+
 
         }
     }

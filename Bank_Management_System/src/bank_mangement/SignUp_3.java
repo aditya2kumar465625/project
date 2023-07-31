@@ -232,7 +232,7 @@ public class SignUp_3  extends JFrame implements ActionListener
                     Date date = new Date();
                     String query = "insert into acc_details value('"+formNo+"','"+accountType+"','"+re+"','"+pin+"','"+facility+"')";
                     String query2 = "insert into login value('"+formNo+"','"+re+"','"+pin+"')";
-                    String query3 = "insert into bank value('"+re+"','"+date+"','"+"Withdraw"+"','"+"0"+"','"+"0"+"')";
+                    String query3 = "insert into bank(card,date,type,amount,Balance)  value('"+re+"','"+date+"','"+"Withdraw"+"','"+"0"+"','"+"0"+"')";
                     signUP_3_data.s.executeUpdate(query);
                     signUP_3_data.s.executeUpdate(query3);
                     signUP_3_data.s.executeUpdate(query2);

@@ -23,7 +23,7 @@ public class Fast_Cash extends JFrame implements ActionListener {
 
         JLabel title = new JLabel("Please Select Your Cash Amount");
         title.setForeground(Color.WHITE);
-        title.setBounds(200, 300, 700, 30);
+        title.setBounds(185, 300, 700, 30);
         title.setFont(new Font("Raleway", Font.PLAIN, 20));
         i4.add(title);
 
@@ -126,7 +126,7 @@ public class Fast_Cash extends JFrame implements ActionListener {
 
                 if (actionEvent.getSource() != exit && balance >= Integer.parseInt(cButton)) {
                     balance -= Integer.parseInt(((JButton) (actionEvent.getSource())).getText());
-                    String query2 = "insert into bank value('" + Card + "','" + date + "','" + "Withdraw" + "','" + cButton + "','" + balance + "')";
+                    String query2 = "insert into bank(card,date,type,amount,Balance)  value('" + Card + "','" + date + "','" + "Withdraw" + "','" + cButton + "','" + balance + "')";
                     c.s.executeUpdate(query2);
                     JOptionPane.showMessageDialog(null, "Withdraw successfully \n Current Balance : " + balance);
                 } else {
